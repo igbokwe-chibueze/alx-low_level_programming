@@ -16,7 +16,7 @@ int main(void)
 		y = (i / 10) % 10; /* tens */
 		z = i % 10; /* singles */
 
-		if (z < y && y < z)
+		if (x < y && y < z)
 		{
 			putchar(x + '0');
 			putchar(y + '0');
