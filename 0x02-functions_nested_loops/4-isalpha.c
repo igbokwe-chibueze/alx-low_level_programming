@@ -7,7 +7,7 @@
  * Return: 1 if letter, lowercase or uppercase, and 0 otherwise
  *
  */
-int _isalpha(int c)
+int _isalpha(char c)
 {
 	if ((c > 64 && c < 91) || (c > 96 && c < 123))
 		return (1);
