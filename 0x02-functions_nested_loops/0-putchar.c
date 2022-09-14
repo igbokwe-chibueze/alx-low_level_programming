@@ -7,12 +7,14 @@
  */
 int main(void)
 {
-	char *h = "Holberton\n";
+	char c = "_putchar";
 
-	while (*h)
+	while (c)
 	{
-		_putchar(*h);
+		_putchar(c);
 		h++;
 	}
+
+	_putchar('\n');
 	return (0);
 }
