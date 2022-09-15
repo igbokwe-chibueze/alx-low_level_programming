@@ -1,29 +1,40 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - entry point
- *
- * Return: always 0 (sucess)
+ * print_triangle - prints a triangle.
+ *@size: prints a triangle.
  */
-int main(void)
-{
-	unsigned long int num = 612852475143;
-	unsigned long int prim;
 
-	prim = 3;
-	while (prim < num / 2)
+void print_triangle(int size)
+{
+
+	int i, j;
+
+	for (i = 0; i < size; i++)
 	{
-		if ((num % prim) == 0)
+		for (j = 0; j < size; j++)
 		{
-			if ((prim % 3) == 2)
+			if (j < size - i - 1)
 			{
-				printf(",%lu ", prim);
+				_putchar(' ');
+			}
+			else
+			{
+				_putchar('#');
 			}
 		}
+		if ((i + 1) == size)
+		{
+			break;
+		}
+		else
+		{
+			_putchar('\n');
 
-		prim += 2;
+		}
+
 	}
 
-	putchar('\n');
-	return (0);
+	_putchar('\n');
 }
+
