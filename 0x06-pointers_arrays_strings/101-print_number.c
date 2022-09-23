@@ -5,9 +5,10 @@
  * @n: the number to process.
  *
  */
+
 void print_number(int n)
 {
-	unsigned int num;
+	unsigned int num = n;
 
 	if (n < 10 && n >= 0)
 	{
