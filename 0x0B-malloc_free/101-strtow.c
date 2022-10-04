@@ -39,13 +39,11 @@ void free_everything(char **string, int i)
 		free(string[--i]);
 	free(string);
 }
-
 /**
  * strtow - function that splits string into words
  * @str: string being passed
  * Return: null if string is empty or null or function fails
  */
-
 char **strtow(char *str)
 {
 	int total_words = 0, b = 0, c = 0, length = 0;
@@ -63,6 +61,7 @@ char **strtow(char *str)
 		if (*str == ' ')
 			str++;
 		else
+		{
 			found_word = str;
 			for (; *str != ' ' && *str != '\0';)
 			{
@@ -71,10 +70,9 @@ char **strtow(char *str)
 			}
 			words[b] = malloc((length + 1) * sizeof(char));
 			if (words[b] == 0)
-			{
 				free_everything(words, b);
 				return (NULL);
-			}
+
 			while (*found_word != ' ' && *found_word != '\0')
 			{
 				words[b][c] = *found_word;
@@ -86,6 +84,6 @@ char **strtow(char *str)
 			c = 0;
 			length = 0;
 			str++;
-
+		}
 	return (words);
 }
