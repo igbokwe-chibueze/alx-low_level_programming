@@ -105,6 +105,7 @@ int main(int argc, char **argv)
 
 	n1 = argv[1];
 	n2 = argv[2];
+
 	if (!(check_num(n1) && check_num(n2)))
 		print_string("Error");
 		exit(98);
@@ -113,6 +114,7 @@ int main(int argc, char **argv)
 	l2 = string_length(n2);
 	l = l1 + l2;
 	multi_res = _calloc(l + 1, sizeof(char *));
+
 	if (multi_res == 0)
 		print_string("Error");
 		exit(98);
