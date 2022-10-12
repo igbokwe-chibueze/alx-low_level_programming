@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include "function_pointers.h"
 
- /* int_index - iterate over an array and executes passed functions on the
+/**
+ * int_index - iterate over an array and executes passed functions on the
  * elements.
  * @array: array of intergers.
  * @size: size of array.
