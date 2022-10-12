@@ -9,11 +9,14 @@
  *
  * Return: Nothing
  */
+
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	if (!array || !size || !action)
-		return;
+	size_t a;
 
-	while (size--)
-		action(*array++);
+	if (array != 0 && action != 0)
+	{
+		for (a = 0; a < size; a++)
+			action(array[a]);
+	}
 }
