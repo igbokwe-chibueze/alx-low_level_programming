@@ -7,6 +7,7 @@
  *
  * Return: Length of list (INT)
  */
+
 size_t print_listint_safe(const listint_t *head)
 {
 	const listint_t *slow_p = head ,*fast_p = head;
