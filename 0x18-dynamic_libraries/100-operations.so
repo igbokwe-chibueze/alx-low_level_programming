@@ -1,0 +1,2 @@
+$ gcc -c -fPIC my_functions.c -o my_functions.o
+$ gcc -shared -o libmy_functions.so my_functions.o
