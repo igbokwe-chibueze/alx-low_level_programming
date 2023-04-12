@@ -10,9 +10,10 @@
  * Return: If the value is not present or the array is NULL, -1.
  *         Otherwise, the first index where the value is located.
  *
- * Description: Prints a value every time it's compared in the array.
+ * Description: Prints a value every time it is compared in the array.
  *              Uses the square root of the array size as the jump step.
  */
+
 int jump_search(int *array, size_t size, int value)
 {
     size_t i, jump, step;
